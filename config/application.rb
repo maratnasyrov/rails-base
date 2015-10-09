@@ -29,9 +29,9 @@ module RailsBase
     config.slim_options = {}
 
     # Default e-mail address which will be shown in the "from" devise emails, initializers/devise.rb,
-    config.noreply = "noreply@fs-rails-base.herokuapp.com"
+    config.noreply = ENV.fetch("MAILER_SENDER_ADDRESS")
 
     # Default host for action mailer, initializers/mailer.rb
-    config.host = "localhost:5000"
+    config.host = ENV.fetch("HOST")
   end
 end
