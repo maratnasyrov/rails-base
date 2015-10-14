@@ -4,6 +4,7 @@ ruby "2.2.3"
 
 gem "rails", "4.2.3"
 gem "pg"
+gem "dotenv-rails"
 
 # assets
 gem "autoprefixer-rails"
@@ -32,7 +33,7 @@ gem "kaminari"
 gem "memory_profiler"
 gem "puma"
 gem "pundit"
-gem "rack-mini-profiler"
+gem "rack-mini-profiler", require: false
 gem "rack-canonical-host"
 gem "responders"
 gem "rollbar"
