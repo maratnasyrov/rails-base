@@ -134,6 +134,21 @@ brew bundle
   git commit -am "Update README.md"
   ```
 
+## Deployment
+
+### Heroku
+
+Out of the box Rails Base ready to be deployed to [Heroku.com](http://heroku.com).
+
+* [Heroku Postgres](https://www.heroku.com/postgres) add-on will be used for database.
+* [SendGrid](https://devcenter.heroku.com/articles/sendgrid#ruby-rails) add-on required to be able to send emails.
+* [NreRelic](https://devcenter.heroku.com/articles/newrelic#ruby-installation-and-configuration) add-on could be used to monitor application performance.
+
+### Custom Server
+
+To be able to deploy to your custom server [Cloud66.com](http://cloud66.com) recommended as a provisioning and deployment service.
+Make sure to review and configure `cloud66/manifest.yml` before deployment.
+
 ## Credits
 
 Rails Base is maintained by [Timur Vafin](http://github.com/timurvafin).
