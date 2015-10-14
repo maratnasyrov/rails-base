@@ -4,7 +4,6 @@ ruby "2.2.3"
 
 gem "rails", "4.2.3"
 gem "pg"
-gem "dotenv-rails"
 
 # assets
 gem "autoprefixer-rails"
